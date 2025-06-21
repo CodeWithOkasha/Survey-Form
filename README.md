@@ -44,13 +44,4 @@ This project serves as a strong foundation for building more interactive forms i
 - 🎨 Simple and clean UI
 - 💡 Basic form validation using HTML attributes
 
----
 
-## 📂 Folder Structure
-
-```bash
-/
-│
-├── index.html       # Main HTML file
-├── style.css        # CSS styling
-└── README.md        # This documentation file
