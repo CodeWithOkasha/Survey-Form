@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remote Work Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section id="survey-container">
+    <h1 id="title">Remote Work Suitability Survey</h1>
+    <p id="description">Help us understand your preferences and readiness for remote work by answering the questions below.</p>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label id="name-label" for="name">Employee Name</label> 
+        <input id="name" type="text" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Work Email Address</label> 
+        <input id="email" type="email" placeholder="Enter your work email" required />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">Weekly remote work hours?</label> 
+        <input id="number" type="number" placeholder="Enter hours per week" required min="1" max="60" />
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown">Which of the following best describes your current position?</label>
+        <select id="dropdown" name="position-dropdown">
+          <option>Software Developer</option>
+          <option>Project Manager</option>
+          <option>UI/UX Designer</option>
+          <option>Human Resources</option>
+          <option>Marketing Specialist</option>
+          <option>Mobile App Developer</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <fieldset class="form-group">
+        <legend>How comfortable are you with remote work?</legend>
+        <label><input type="radio" name="your-decision" value="very-comfortable" checked /> Very Comfortable</label>
+        <label><input type="radio" name="your-decision" value="somewhat comfortable" /> Somewhat Comfortable</label>
+        <label><input type="radio" name="your-decision" value="not comfortable" /> Not Comfortable</label>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="challenge-dropdown">What is your biggest challenge when working remotely?</label>
+        <select id="challenge-dropdown" name="challenge-dropdown">
+          <option>Distractions at home</option>
+          <option>Lack of team communication</option>
+          <option>Internet issues</option>
+          <option>Time management</option>
+          <option>Loneliness</option>
+          <option>No challenges</option>
+        </select>
+      </div>
+
+      <fieldset class="form-group">
+        <legend>Which remote work tools do you use? (Select all that apply)</legend>
+        <label><input type="checkbox" name="Tools" value="zoom" /> Zoom</label>
+        <label><input type="checkbox" name="Tools" value="microsoft teams" /> Microsoft Teams</label>
+        <label><input type="checkbox" name="Tools" value="slack" /> Slack</label>
+        <label><input type="checkbox" name="Tools" value="gitHub" /> GitHub</label>
+        <label><input type="checkbox" name="Tools" value="anyDesk" /> AnyDesk</label>
+        <label><input type="checkbox" name="Tools" value="other" /> Other</label>  
+      </fieldset>
+
+      <div class="form-group">
+        <label for="comments">Additional comments or concerns about remote work?</label>
+        <textarea id="comments" name="comments" rows="5" placeholder="Share your thoughts..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" id="submit" value="Submit" />
+      </div>
+
+    </form>
+  </section>
+
+</body>
+</html>
